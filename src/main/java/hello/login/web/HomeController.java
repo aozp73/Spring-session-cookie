@@ -79,7 +79,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String homeLoginV4(
-            @SessionAttribute(name = SessionConst.LOGIN_MEMBER, required = true) Member loginMember,
+            @SessionAttribute(name = SessionConst.LOGIN_MEMBER, required = false) Member loginMember,
             Model model) {
 
         // 세션에 값이 없다면, home 화면
